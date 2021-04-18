@@ -13,13 +13,13 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(17, 150, 173);
+    background: darkgrey;
     flex-wrap: wrap;
 }
 
 h1 
 {
-    color: rgb(57, 33, 112);
+    color: black;
     text-align: center;
     font-size:100px;
 }
@@ -67,14 +67,14 @@ section div
 {
     color: rgb(252, 2, 2);
 }
-   
+
 .container
 {
     position: relative;
     width: 1100px;
     display: flex;
     justify-content: center;
-    align-items: row;
+    align-items: center;
     flex-wrap: wrap;
     padding: 30px;
 }
@@ -83,9 +83,9 @@ section div
 {
     position: relative;
     max-width: 300px;
-    height: 235px;
+    height: 260px;
     background: #fff;
-    margin: 0px 10px 25px 0;
+    margin: 0px 10px;
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
@@ -93,39 +93,19 @@ section div
     transition: 0.5s ease-in-out;
 }
 
-.container .card2 {
-    position: relative;
-    max-width: 300px;
-    height: 620px;
-    background: #fff;
-    margin: 0px 10px 50px 0;
-    padding: 20px 0 20px 0px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 20px rgba(10, 10, 10, 0.5);
-    
-
 .container .card:hover
 {
-    height: 450px;
+    height: 525px;
 }
 
 .container .card .imgBx
 {
     position: center;
     width: 270px;
-    height: 180px;
+    height: 220px;
     top: -60px;
     left: 20px;
     z-index: 1;
-    box-shadow: 0 5px 20px rgba(5, 5, 5, 0.7);
-}
-
-.container .card2 .imgBx {
-    position: center;
-    width: 200px;
-    height: 200px;
-  
     box-shadow: 0 5px 20px rgba(5, 5, 5, 0.7);
 }
 
@@ -147,58 +127,16 @@ section div
     transition: 0.3s ease-in-out;
 }
 
-.container .card:hover .content
+.descript p
+ {
+    visibility: hidden;
+}
+
+.container .card:hover .descript p
 {
     visibility: visible;
     opacity: 1;
-    margin-top: -40px;
     transition-delay: 0.3s;
-}
-
-.sale 
-{
-    position: relative;
-    display: inline-block;
-    background: orange;
-    color: white;
-    height: 2.5rem;
-    width: 2.5rem;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 2.5rem;
-    margin: 45vh 45vw;
-    transform: rotate(-20deg);
-    animation: beat 1s ease infinite alternate;
-}
-
-.sale :before,
-.sale :after 
-{
-    content: "";
-    position: absolute;
-    background: inherit;
-    height: inherit;
-    width: inherit;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transform: rotate(30deg);
-}
-
-.sale :after 
-{
-    transform: rotate(60deg);
-}
-
-
-@keyframes beat {
-    from {
-        transform: rotate(-20deg) scale(1);
-    }
-
-    to {
-        transform: rotate(-20deg) scale(1.1);
-    }
 }
 
 .registration-form {
@@ -266,4 +204,10 @@ section div
     font-weight: 500;
     margin-bottom: 8px;
     transition: .2s linear;
+}
+
+.continent
+{
+    width:3000px;
+    font-size: 40px;
 }
