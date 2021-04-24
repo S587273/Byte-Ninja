@@ -13,15 +13,21 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    background: darkgrey;
+    background: rgb(83, 79, 79);
     flex-wrap: wrap;
 }
 
 h1 
 {
-    color: black;
+    color: whitesmoke;
     text-align: center;
     font-size:100px;
+}
+
+h2 {
+    color: grey;
+    text-align: center;
+    font-size: 100px;
 }
 
 ul 
@@ -48,6 +54,15 @@ section div
     padding: 10;
     text-align: left;
 
+}
+
+.discount
+{
+    color: rgb(255, 238, 7);
+    margin: 0;
+    padding: 10;
+    text-align: center;
+    font-size: 30px;
 }
 
 .menu a 
@@ -95,7 +110,7 @@ section div
 
 .container .card:hover
 {
-    height: 525px;
+    height: 645px;
 }
 
 .container .card .imgBx
@@ -120,7 +135,7 @@ section div
     position: relative;
     margin-top: -140px;
     padding: 10px 150px;
-    text-align: center;
+    text-align: justified;
     color: rgb(8, 8, 8);
     visibility: hidden;
     opacity: 0;
@@ -138,12 +153,14 @@ section div
     opacity: 1;
     transition-delay: 0.3s;
 }
+ 
+/* Become a member page */
 
 .registration-form {
-    width: calc(100% - 10px);
-    max-width: 550px;
+  
+    max-width: auto;
     max-height: inherit;
-    background-color: rgb(17, 150, 173);
+    background-color: rgb(81, 85, 84);
     padding: 10px 40px;
     border-radius: 2%;
     box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.3);
@@ -206,7 +223,7 @@ section div
     transition: .2s linear;
 }
 
-.continent
+.content
 {
     width:3000px;
     font-size: 40px;
