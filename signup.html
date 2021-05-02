@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIT226_Group D/HD Byte Ninja.com</title>
+    <title>HIT226_BenCarruthS587273_InfoCards_Travel_Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" type="text/javascript"></script>
 </head>
 
 <section>
@@ -18,48 +19,54 @@
 			</ul>
 		</nav>
 		
-		<h1>Byte Ninja.com</h1>
+		<h1>Bits4Bits Computer Hardware</h1>
 	</header>
 
-    <div class = "discount"> Sign up for exclusive member only prices, with up to 15% off RRP!<br></br></div>
-
-	<form action="#" class="registration-form">
+<form action="#" class="registration-form">
     <form name="registration form" onSubmit="return formValidation();">
         <h1>Registration Page</h1>
         <ul>
             <div class="textb">
-                <input type="username" required>
+                <input type="username" id="uName">
                 <div class="placeholder">Name</div>
+                <label id ="lbluser" style="color:red ; visibility:hidden;">Invalid Input</label>
             </div>
 
             <div class="textb">
-                <input type="useraddress" required>
+                <input type="useraddress" id="address">
                 <div class="placeholder">Address</div>
+                <label id ="lbladdress" style="color:red ; visibility:hidden;">Invalid Input</label>
             </div>
         
             <div class="textb">
-                <input type="userEmail" required>
+                <input type="email" id="email">
                 <div class="placeholder">Email</div>
+                <label id ="lblemail" style="color:red ; visibility:hidden;">Invalid Input</label>
             </div>
         
             <div class="textb">
-                <input type="date" required, id="DateOfBirth" onblur = "ValidateDOB()"/>
+                <input type="date" id="DOB">
                 <div class="placeholder">Date of Birth</div>
+                <label id ="lblDOB" style="color:red ; visibility:hidden;">Invalid Input</label>
             </div>
         
             <div class="textb">
-                <input type="tel" required>
+                <input type="tel" id="tel">
                 <div class="placeholder">Phone Number</div>
+                <label id ="lbltel" style="color:red ; visibility:hidden;">Invalid Input</label>
             </div>
         
             <div class="textb">
-                <input type="password" required>
+                <input type="password" id="pword">
                 <div class="placeholder">Password</div>
                 <div class="show-password fas fa-eye-slash"></div>
+                <label id ="lblpword" style="color:red ; visibility:hidden;">Invalid Input</label>
             </div>
-
-            <div class="submit textb">
-                <input type="submit" value="Submit">
-			</div>
+            <div class="textb">
+                <input type="password" id="pword2">
+                <div class="placeholder">Re-enter Password</div>
+                <div class="show-password fas fa-eye-slash"></div>
+                <label id ="lblpword2" style="color:red ; visibility:hidden;">Invalid Input</label>
+            </div>
+            <button type="submit" onclick="validate()">Submit</button>
     </form>
-</section>
